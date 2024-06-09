@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 300px;
+      font-family: Arial, sans-serif;
+    }
+    .action-btn {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Annotator</h2>
+  <div>
+    <label for="highlight-color">Highlight Color:</label>
+    <select id="highlight-color">
+      <option value="#ffff00">Yellow</option>
+      <option value="#ff0000">Red</option>
+      <option value="#00ff00">Green</option>
+      <option value="#0000ff">Blue</option>
+    </select>
+  </div>
+  <div id="highlight" class="action-btn">Highlight Text</div>
+  <div id="add-note" class="action-btn">Add Note</div>
+  <div id="export" class="action-btn">Export Annotations</div>
+</body>
+<script src="popup.js"></script>
+</html>
